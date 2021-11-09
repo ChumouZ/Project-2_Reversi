@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Reversi Game</title>
+</head>
+
+<body>
+  <h1>Reversi</h1>
+  <!-- The p5 canvas will be placed inside this div -->
+  <div id="canvas-container"></div>
+  <div class="game_rule">
+    <h3>Rules of Reversi：</h3>
+    <p>1. Every game starts with four discs placed in the center of the board.The players choose who goes first.</p>
+    <p>2. The incorported piece must outflank one or more of the opponent placed pieces.</p>
+    <p>3. To outflank means that a single piece or one straight row (vertical, horizontal or diagonal) of pieces of the
+      opponent is in both sides next to own pieces, with no empty squares between all those pieces. The player who makes
+      the move turns the outflanked pieces over, becoming all of them in own pieces.</p>
+    <p>4. The game is over when neither player has a legal move (i.e. a move that captures at least one opposing piece)
+      or when the board is full.</p>
+  </div>
+    <button class="button" id="private_room_button" type="button">Private Game</button>
+  <!-- scripts -->
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
