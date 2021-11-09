@@ -30,7 +30,7 @@ socket.on('draw-data', (data) => {
 
 //STEP 1. Set up basic app functionality
 function setup() {
-    let myCanvas = createCanvas(510, 402);
+    let myCanvas = createCanvas(520, 402);
     myCanvas.parent("canvas-container");
     background(231, 231, 174);
     // for (let i = 0; i < 9; i++) {
@@ -90,30 +90,30 @@ function draw() {
     textAlign(LEFT);
     noStroke(0);
     fill(255);
-    rect(420, 280, 90, 30, 5);
+    rect(420, 280, 100, 30, 5);
     fill(0);
     textSize(18);
     text("Black: ", 430, 302);
     text(cntBlack, 490, 302);
     fill(0);
-    rect(420, 330, 90, 30, 5);
+    rect(420, 330, 100, 30, 5);
     fill(255);
     text("White: ", 430, 352);
     text(cntWhite, 490, 352);
 
     if (turn == true) {
         fill(0);
-        rect(420, 22, 90, 40, 7);
+        rect(423, 22, 90, 40, 7);
         fill(255);
         textSize(21);
-        text("WHITE", 430, 50);
+        text("WHITE", 433, 50);
     }
     else {
         fill(255);
-        rect(420, 22, 90, 40, 7);
+        rect(423, 22, 90, 40, 7);
         fill(0);
         textSize(21);
-        text("BLACK", 430, 50);
+        text("BLACK", 434, 50);
     }
 
     if (cntWhite + cntBlack == 64) {
